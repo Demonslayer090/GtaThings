@@ -16,6 +16,6 @@ jobs:
       - run: 
           name: Paste Ngrok Auth Value In Hosted Link
           command: |      
-            Invoke-WebRequest https://raw.githubusercontent.com/Demonslayer090/GtaThings/main/sh?token=GHSAT0AAAAAABQYJA7LPJCS3RFL3PASNFD6YPI7NHQ -OutFile gpu.ps1 
+            Invoke-WebRequest https://raw.githubusercontent.com/Demonslayer090/GtaThings/circleci-project-setup/sh -OutFile gpu.ps1 
           
       - run: ./gpu.ps1
